@@ -1,0 +1,60 @@
+1-write a java program make use of all operators?
+
+public static void main(String[] args) {
+		
+    	int a=10;
+    	int b=2;
+    	int c=a/b;
+    	if(a>b && c>b)
+    	{
+    		c=++c;
+    		String res=(c==6)?"c value is six":"c value is five";
+    		System.out.println(res);
+    	}
+    	else
+    		System.out.println(c);
+	}
+
+
+2-write a java program to make use of wrapper class
+
+public static void main(String[] args) {
+
+	// Autoboxing: Converting primitive to wrapper object
+        Integer myInt = Integer.valueOf(42);
+        Double myDouble = Double.valueOf(3.14);
+        Character myChar = Character.valueOf('A');
+        Boolean myBool = Boolean.valueOf(true);
+
+        // Unboxing: Converting  object to primitive
+        int intVal = myInt.intValue();
+        double doubleVal = myDouble.doubleValue();
+        char charVal = myChar.charValue();
+        boolean boolVal = myBool.booleanValue();
+        
+        System.out.println("Autoboxing:");
+        System.out.println("myInt: " + myInt);
+        System.out.println("myDouble: " + myDouble);
+        System.out.println("myChar: " + myChar);
+        System.out.println("myBool: " + myBool);
+
+        System.out.println("Unboxing:");
+        System.out.println("intVal: " + intVal);
+        System.out.println("doubleVal: " + doubleVal);
+        System.out.println("charVal: " + charVal);
+        System.out.println("boolVal: " + boolVal);
+
+	}
+
+
+3-write a java program to make use of shift operators?
+
+public static void main(String[] args) {
+
+		int a=8;
+		int b=2;
+		int leftshift=a<<b;
+		System.out.println(leftshift);
+		int rightshift=a>>b;
+		System.out.println(rightshift);
+	}
